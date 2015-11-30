@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Notify.js</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cantarell:400,700">
+		<link rel="stylesheet" type="text/css" href="assets/theme.css">
+	</head>
+	<body>
+		<div class="cpanel text-left">
+			<h1>How to use Notify.js</h1>
+			<p>To use Notify.js, you first need to link the <code>notify.min.js</code> and the CSS file for your theme (Element is used as an example). If you use Element, it should look like this...</p>
+			<p><code>&lt;link rel="stylesheet" type="text/css" href="assets/notify/element.css"&gt;<br>
+			&lt;script type="text/javascript" src="demo/notify.js"&gt;&lt;/script&gt;</code></p>
+			<p>After you've done that, go down to the end of the page and if you are using Element, type this:</p>
+			<p><code>&lt;div id=&quot;notifyCloak&quot; class=&quot;&quot; onclick=&quot;notifyHide()&quot;&gt;&lt;/div&gt;<br>
+			&lt;div class=&quot;notify-box notify-hide&quot; id=&quot;notifyJs&quot;&gt;<br>
+			&nbsp;&nbsp;&lt;a onclick=&quot;notifyHide()&quot; class=&quot;notify-close&quot;&gt;&amp;times;&lt;/a&gt;<br>
+			&nbsp;&nbsp;&lt;div class=&quot;notify-img&quot; id=&quot;notifyIcon&quot;&gt;&lt;/div&gt;<br>
+			&nbsp;&nbsp;&lt;div class=&quot;notify-content&quot;&gt;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 id=&quot;notifyTitle&quot;&gt;You haven't set anything.&lt;/h4&gt;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;p id=&quot;notifyContent&quot;&gt;You should set something before doing it again.&lt;/p&gt;<br>
+			&nbsp;&nbsp;&lt;/div&gt;<br>
+			&lt;/div&gt;</code></p>
+			<p>And you should be ready to go.</p>
+			<h2>Summoning the notification</h2>
+			<p>To set the notification text, push the following command: <code>notifySet('Title','Content','Icon location',false);</code>. Feel free to change the attributes above. You can set the last attribute to <code>true</code> to make the notification show right after it gets set.</p>
+			<p>You can make the notification disappear by using <code>notifyHide();</code> and appear yet again with <code>notifyShow();</code>. A toggle is also available if you want that... just use <code>notifyToggle();</code>.</p>
+			<hr>
+			<small>&copy; <a href="http://www.thegreatrazz.cf/">Raresh Nistor</a>. Licensed under the MIT license.</small>
+		</div>
+	</body>
+</html>

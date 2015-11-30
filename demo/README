@@ -1,0 +1,9 @@
+Information on how to get started is on
+<http://www.thegreatrazz.cf/notify.js/usage.html>
+
+If you are using this in a production environment,
+please use the minified (*.min.*) versions as they
+are smaller and take less to load.
+
+For everyone else, there is the normal version
+with comments so you can hack and make this better.

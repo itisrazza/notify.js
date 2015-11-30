@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Notify.js</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="demo/element.css">
+		<script type="text/javascript" src="demo/notify.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cantarell:400,700">
+		<link rel="stylesheet" type="text/css" href="assets/theme.css">
+
+		<script type="text/javascript">
+			function demoPlay() {
+				notifySet(document.getElementById("demoTitle").value, document.getElementById("demoContent").value, document.getElementById("demoIcon").value,true)
+			}
+		</script>
+	</head>
+	<body>
+		<div class="cpanel">
+			<h1>Notify.js</h1>
+			<h4>Notification that appears inside the webpage</h4>
+			<p><a href="notify.js.zip" class="button">Download</a> the Notify.js package (.zip). It includes the <b>JavaScript plugin</b>, <b>the <q>Element</q> theme</b> and <b>this demo</b>.</p>
+			<p>Once, you get it, you may also want to know <a href="usage.html">how to use it</a>...</p>
+			<hr>
+			<h2>Test out the notification plugin</h2>
+			<p>You can see the this plugin in action by typing things below.</p>
+			<div>
+				<big><input type="text" class="input-long margin-bottom-sm" id="demoTitle" placeholder="Title"></big>
+				<input type="text" class="input-long margin-bottom-sm" id="demoIcon" placeholder="Image location">
+				<textarea class="input-long ta-medium" id="demoContent" placeholder="Content"></textarea>
+				<input type="button" value="Pop the toast" onclick="demoPlay()"> <input type="button" onclick="notifyToggle()" value="Toggle the notification">
+			</div>
+			<hr>
+			<small>&copy; <a href="http://www.thegreatrazz.cf/">Raresh Nistor</a>. Licensed under the MIT license.</small>
+		</div>
+
+
+		<div id="notifyCloak" class="" onclick="notifyHide()"></div>
+		<div class="notify-box notify-hide" id="notifyJs">
+			<a onclick="notifyHide()" class="notify-close">&times;</a>
+			<div class="notify-img" id="notifyIcon"></div><div class="notify-content">
+				<h4 id="notifyTitle">You haven't set anything.</h4>
+				<p id="notifyContent">You should set something before doing it again.</p>
+			</div>
+		</div>
+	</body>
+</html>
