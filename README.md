@@ -1,5 +1,5 @@
 # Notify the web
-A simple, yet reliable JavaScript plugin (CSS file available for styling the notification window) that pops up an notification inside the web browser.
+A simple, yet reliable JavaScript plugin that pops up an notification inside the web browser.
 
 ![Notify.js](http://i.imgur.com/yLew0Lt.png)
 
