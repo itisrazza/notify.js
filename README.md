@@ -7,7 +7,7 @@ A simple, yet reliable JavaScript plugin that pops up an notification inside the
 Once you included the notify.js file and your theme of choice, use the following JavaScript commands:
 ```JS
 // To set the content of the notification
-notifySet('Title','Content','Icon location',false);
+notifySet('Title', 'Content', 'Icon location', false);
 
 /* The title and content are strings, the icon is a location to an image
  * and the last attribute is whether to show the notification or not
